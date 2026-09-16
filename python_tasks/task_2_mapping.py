@@ -3,10 +3,18 @@
 # and values are the count of occurrences.
 
 def count_categories(categories):
-    # TODO: Write your logic here
-    pass
+    thisdict = {}
 
-# Test Case
+    for x in categories:
+        if x in thisdict:
+            thisdict[x] += 1
+        else:
+            thisdict[x] = 1
+
+    return thisdict
+
+
 data = ['Brakes', 'Engine', 'Brakes', 'Tools', 'Engine', 'Brakes']
+
 # Expected: {'Brakes': 3, 'Engine': 2, 'Tools': 1}
 print(count_categories(data))

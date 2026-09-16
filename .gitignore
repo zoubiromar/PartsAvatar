@@ -1,0 +1,10 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+venv/*
+
+# python compiled code
+__pycache__/
+*.pyc
+
+# python notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
